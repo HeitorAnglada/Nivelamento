@@ -1,0 +1,101 @@
+\documentclass[12pt,a4paper]{article}
+
+% Configurando margens da página
+\usepackage[headheight=1.5 cm, top=3.5 cm, bottom=2.0 cm, left=3.0 cm, rigth=2.0 cm]{geometry}
+\usepackage{setspace}
+
+% Definindo a lingauem e a fonte do texto
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+% Importando os pacotes de matemática
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsfonts} %Configurações para letras dos conjuntos numéricos
+\usepackage{mathdots}
+\usepackage{cancel}
+
+% Pacote para habilitar múltiplas colunas
+\usepackage{multicol}
+\setlength{\columnsep}{0.8cm}
+
+% Configurando o recuo da primeira linha
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+
+% Para incluir figuras
+\usepackage[dvips]{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{transparent}
+\usepackage{subcaption}
+
+% Para ajustar tabelas
+\usepackage{array}
+\renewcommand{\arraystretch}{1.7}% Ajuste a altura das células
+
+%Para navegação pelo documento
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	linkcolor=main,
+	anchorcolor=red,
+	citecolor=blue!80,
+	urlcolor=blue!80,
+}
+
+%Configurações de cabeçalho
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[l]{\includegraphics[height=1.5cm]{source/logo-latex.png}}
+\rhead{
+\includegraphics[height=1.5cm]{source/niv_logo_FI.png}
+\includegraphics[height=1.5cm]{source/niv_logo_PG.png}
+\includegraphics[height=1.5cm]{source/niv_logo_QI.png}
+\includegraphics[height=1.5cm]{source/niv_logo_BIO.png}
+\includegraphics[height=1.5cm]{source/niv_logo_PC.png}
+\includegraphics[height=1.5cm]{source/niv_logo_IB.png}
+}
+\rfoot{\thepage}
+
+% Define um novo estilo de cabeçalho
+\fancypagestyle{mystyle}{
+  \fancyhf{}  % Limpa todos os cabeçalhos e rodapés anteriores
+  \renewcommand{\headrulewidth}{0.0pt}
+  \fancyhead[L]{\includegraphics[height = 1.2 cm]{source/itec-ufpa-logo.png}}
+  \fancyhead[C]{\includegraphics[height = 1.5 cm]{source/logo-latex.png}}
+  \fancyhead[R]{\includegraphics[height = 1.2 cm]{source/tutotia.jpg}}
+  \fancyfoot[R]{\thepage}  % Número da página no centro do rodapé
+}
+
+\pagestyle{fancy}
+
+
+%Criando o ambiente para exercícios
+\theoremstyle{definition}
+%\newtheorem{Que}{Quest\~ao}
+\usepackage{lipsum} 
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+
+%Caixa de texto
+\usepackage[most]{tcolorbox}
+\usepackage{varwidth}
+
+\definecolor{main}{HTML}{006b8f}
+\definecolor{azul1}{HTML}{DAF2FF}
+\definecolor{azul3}{HTML}{ADDDF0}
+\definecolor{azul2}{rgb}{0.36,0.54, 0.66}
+\definecolor{preto}{HTML}{3F3F3F}
+\definecolor{aqua1}{HTML}{D8FEF1}
+\definecolor{aqua2}{HTML}{AAE4CF}
+\definecolor{lavanda1}{HTML}{D6D4F2}
+\definecolor{lavanda2}{HTML}{B4B1E2}
+\definecolor{cinza1}{HTML}{F0F0F0}
+\definecolor{cinza2}{HTML}{E0E0E0}
+\definecolor{verticalbarcolor}{RGB}{0,102,204}
+\definecolor{verde}{HTML}{D3EBDB}
+
